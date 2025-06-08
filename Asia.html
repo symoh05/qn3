@@ -1,0 +1,260 @@
+<HTML>
+<head>
+<title>ASIA</title>
+<style>
+  /* Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.2rem;
+  }
+  
+  /* Content Styles */
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Country List Styles */
+  .country-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0;
+  }
+  
+  .country-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .country-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .country-banner {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .country-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+  }
+  
+  .country-name {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  
+  .country-link {
+    display: block;
+    padding: 15px;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  .country-link:hover {
+    color: #e74c3c;
+  }
+  
+  /* Asia Banner */
+  .asia-banner {
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin: 20px auto 40px;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .asia-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 8px;
+  }
+  
+  .asia-title {
+    color: white;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    position: relative;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  /* Navigation Styles */
+.continent-nav {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  z-index: 100;
+  box-shadow: none;
+  border-top: none;
+}
+
+.continent-nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 8px;
+}
+
+.continent-nav li {
+  margin: 0;
+}
+
+.continent-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1.5px solid #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.continent-nav a:hover {
+  background-color: #2c3e50;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Body adjustment for navigation */
+body {
+  padding-bottom: 60px;
+}
+
+/* Active state for current page */
+.continent-nav a[href*="Africa"] {
+  background-color: #2c3e50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="asia-banner">
+  <h1 class="asia-title">ASIA: THE ECHOES OF THE EAST</h1>
+</div>
+
+<p>Asia, the largest and most populous continent on earth, is a land of breathtaking contrast and enduring civilization. From the snowy peaks of Himalayas to the tropical highlands of Southeast Asia, the continent is a mosaic of languages, beliefs and traditions.</p>
+
+<p>Home to ancient civilizations like China, India, and Mesopotamia, Asia has been the cradle of major world religions, philosophical traditions, and scientific innovations. Today, it's a dynamic blend of ancient heritage and cutting-edge modernity.</p>
+
+<div class="country-list">
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1518632611755-2a1b7dc81b1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Russia</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Russia" class="country-link">Explore the world's largest country</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">China</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/China" class="country-link">Discover ancient dynasties and modern marvels</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1528181304800-259b08848526?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Thailand</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Thailand" class="country-link">Experience the Land of Smiles</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Japan</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Japan" class="country-link">Where tradition meets innovation</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1581852057101-aa7cf79db3f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">India</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/India" class="country-link">A subcontinent of diversity</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">South Korea</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/South_Korea" class="country-link">High-tech cities and serene temples</a>
+  </div>
+</div>
+
+<p>From the futuristic cities of East Asia to the ancient temples of South Asia, from the vast steppes of Central Asia to the tropical islands of Southeast Asia, this continent continues to shape global culture, economy, and politics in the 21st century.</p>
+<nav class="continent-nav">
+  <ul>
+    <li><a href="world.html">World Map</a></li>
+    <li><a href="Africa.html">Africa</a></li>
+    <li><a href="America.html">America</a></li>
+    <li><a href="Asia.html">Asia</a></li>
+    <li><a href="Europe.html">Europe</a></li>
+    <li><a href="AustraliaandNewZealand.html">Australia and NewZealand</a></li>
+  </ul>
+</body>
+</HTML>

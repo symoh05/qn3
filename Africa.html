@@ -1,0 +1,261 @@
+<HTML>
+<head>
+<title>AFRICA</title>
+<style>
+  /* Global Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 2.2rem;
+  }
+  
+  /* Content Styles */
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Country List Styles */
+  .country-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0;
+  }
+  
+  .country-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .country-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .country-banner {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .country-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+  }
+  
+  .country-name {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  
+  .country-link {
+    display: block;
+    padding: 15px;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  .country-link:hover {
+    color: #e74c3c;
+  }
+  
+  /* Africa Banner */
+  .africa-banner {
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin: 20px auto 40px;
+    max-width: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .africa-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 8px;
+  }
+  
+  .africa-title {
+    color: white;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    position: relative;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  /* Navigation Styles */
+.continent-nav {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  z-index: 100;
+  box-shadow: none;
+  border-top: none;
+}
+
+.continent-nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  gap: 8px;
+}
+
+.continent-nav li {
+  margin: 0;
+}
+
+.continent-nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1.5px solid #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 90px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.continent-nav a:hover {
+  background-color: #2c3e50;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Body adjustment for navigation */
+body {
+  padding-bottom: 60px;
+}
+
+/* Active state for current page */
+.continent-nav a[href*="Africa"] {
+  background-color: #2c3e50;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="africa-banner">
+  <h1 class="africa-title">AFRICA: THE SPIRIT OF AFRICAN HERITAGE</h1>
+</div>
+
+<p>Africa, the cradle of humanity, is a continent rich in diversity, resilience, wildlife and tradition. From its majestic landscapes to its vibrant cultures, Africa tells stories that span millennia of kingdoms, migrations, innovation and unity in diversity.</p>
+
+<p>With 54 sovereign nations, Africa offers an unparalleled variety of ecosystems, from the Sahara desert to lush rainforests, and from savannah grasslands to stunning coastlines.</p>
+
+<div class="country-list">
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Kenya</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Kenya" class="country-link">Explore Kenya's wildlife and landscapes</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Egypt</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Egypt" class="country-link">Discover ancient Egyptian civilization</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1580060839134-75a5ed5eef84?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">South Africa</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/South_Africa" class="country-link">Experience the Rainbow Nation</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1570891836654-d4961a1f4a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Nigeria</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Nigeria" class="country-link">Visit Africa's economic powerhouse</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1518544866330-95b5af6d8b7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Morocco</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Morocco" class="country-link">Explore vibrant markets and cities</a>
+  </div>
+  
+  <div class="country-item">
+    <div class="country-banner" style="background-image: url('https://images.unsplash.com/photo-1566438480900-0609be27a4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+      <span class="country-name">Tanzania</span>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Tanzania" class="country-link">See Mount Kilimanjaro and wildlife</a>
+  </div>
+</div>
+
+<p>Africa continues to shape global culture through its music, art, literature, and innovations, while preserving ancient traditions that make it one of the most fascinating continents to explore.</p>
+<nav class="continent-nav">
+  <ul>
+    <li><a href="world.html">World Map</a></li>
+    <li><a href="Africa.html">Africa</a></li>
+    <li><a href="America.html">America</a></li>
+    <li><a href="Asia.html">Asia</a></li>
+    <li><a href="Europe.html">Europe</a></li>
+    <li><a href="AustraliaandNewZealand.html">Australia and NewZealand</a></li>
+  </ul>
+</nav>
+</body>
+</HTML>
